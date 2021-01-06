@@ -30,10 +30,10 @@
               Maps
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+              <a class="dropdown-item" href="max_temp.html">Heatmaps</a>
+              <a class="dropdown-item" href="humidity.html">Charts</a>
+              <a class="dropdown-item" href="cloudiness.html">Places- Leaflet</a>
+              <a class="dropdown-item" href="wind_speed.html">Database</a>
             </div>
           </li>
 
@@ -61,7 +61,9 @@
     </nav>
   </div>
 
+  
   <div class="container">
+<<<<<<< HEAD
     <div class="jumbotron">
       <h1 class="display-4">Austin Crime Analysis</h1>
       <hr class="my-4">
@@ -77,10 +79,65 @@
       <p>After assembling the dataset, we used a number of data tools to build maps displaying the crime data in a heatmap and used the new Java Library of Google Charts to display the types of crime by zip code.</p>
     </div>
   </div>
+=======
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+  
+        <div class="box">
+          <h3 class="title">Summary: Crime in Austin</h3>
+          <hr>
+          <img src="..\html\images\Fig1.png" class="vizualization rounded float-left" alt="Max Temperature">
+          <p>
+            <h1 class="display-4">Austin Crime Analysis</h1>
+            <hr class="my-4">
+            <p>The goal of this analysis is to review the crime data of Austin, Texas. We pulled data from AustinTexas.gov.</p>
+            <p>The purpose to identify the key areas of downtown Austin by zip code and inspect discernible crimes tied to specific zip codes. </p>
+            <p>After we pulled the crime data from AustinTexas.gov, we inserted the recorded crimes over the years 2015-2018 into a SQL Database on PG Admin.</p>
+            <p>We queried the data and exported it to CSV. The CSVs were cleaned in Pandas and we created 2D basic visualizations to help us narrow down the crime data to see patterns.</p>
+            <p>The crimes over the four course period of 2015-2018 were substantial, so it required consierable cleaning. We noticed trends of total increased crime over 2015-2018.</p>
+            <p>We had to modify the data to correct for the incorrect coordinates we obtained by shifting the longitude by the standard error we calculated.</p>
+            <p>From here we narrowed down the zip codes to focus on downtown Austin as the surrouding suburbs were skewing our heatmap.</p>
+            <p>Finally we decided to focus on the key crimes in their respective zip codes. We compared the crimes in those zip codes against the locations of the crimes to amount of gun stores, liquor stores, casinos.</p>
+              </p>
+            <p>After assembling the dataset, we used a number of data tools to build maps displaying the crime data in a heatmap and used the new Java Library of Google Charts to display the types of crime by zip code.</p>
+          </div>
+        </div>
+      <div class="col-lg-5 col-md-12">
+     
+        <div class="box">
+          <h5 class="title">Visualizations</h5>
+          <hr>
+>>>>>>> a8a24606403ab168caa3b2bdddfbed2e3f83b765
 
 
+          <div class="container">
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="max_temp.html">
+                  <img class="panel" src="2015heatmap.png" alt="Heatmaps">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="humidity.html">
+                  <img class="panel" src="2015newzips.png" alt="Charts">
+                </a>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="cloudiness.html">
+                  <img class="panel" src="..\html\images\Fig3.png" alt="Places">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="wind_speed.html">
+                  <img class="panel" src="totalbyyear.png" alt="Data">
+                </a>
+              </div>
 
 
+<<<<<<< HEAD
             <div class="col-md-50">
                 <div class="col-md-12">
                     <h3>Downtown Austin by Zip Code</h3>
@@ -90,6 +147,8 @@
                             <a href="temp.html"><img src="../Presentation/AustinZipMap.png" width="100%" alt="Downtown Austin by Zip Code"></a>
                         </div>
                        
+=======
+>>>>>>> a8a24606403ab168caa3b2bdddfbed2e3f83b765
                       
 
         
