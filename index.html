@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Austin Crime Analysis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Maps
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Resources/assets/images/Fig1.png">Max Tempurature</a>
+            <a class="dropdown-item" href="Resources/assets/images/Fig2.png">Humidity</a>
+            <a class="dropdown-item" href="Resources/assets/images/Fig3.png">Cloudiness</a>
+            <a class="dropdown-item" href="Resources/assets/images/Fig4.png">Windspeed</a>
+          </div>
+        </li>
+
+        <ul class="navbar-nav navbar-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Charts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="images/2015newzips.png">2015 Crime Chart</a>
+            <a class="dropdown-item" href="images/2016newzips.png">2016 Crime Chart</a>
+            <a class="dropdown-item" href="images/2017newzips.png">2017 Crime Chart</a>
+            <a class="dropdown-item" href="images/2018newzips.png">2018 Crime Chart</a>
+          </div>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparision</a>
+        </li>
+              <li class="nav-item">
+          <a class="nav-link" href="table.html">Data</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Austin Crime Analysis</h1>
+      <hr class="my-4">
+      <p>The goal of this analysis is to review the crime data of Austin, Texas. The purpose to identify the key areas of downtown Austin by zip code and to see if there are any discernible crimes tied to specific areas. </p>
+       <p>We pulled data from the Austin's goverment portal for crime data and analyzed the quality of the data usinga SQL Database. We had to modify the data to correct for the incorrect coordinates we obtained by shifting the longitude by the standard error we calcualted. From here we narrowed down the zip codes to focus on downtown Austin as the surrouding suburbs were skewing our heatmap. Finally we decided to focus on the key crimes in their respective zip codes.
+        </p>
+      <p>After assembling the dataset, we used a number of data tools to build maps displaying the crime data in a heatmap and used the new Java Library of Google Charts to display the types of crime by zip code. </p>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+ 
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
