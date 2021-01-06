@@ -17,7 +17,7 @@
   
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" style="background-color: #0bad69;" href="index.html">Latitude</a>
+      <a class="navbar-brand" style="background-color: #0bad69;" href="index.html">Austin, Texas Crime Analysis</a>
       <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,10 +27,23 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              Plots
+              Maps
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            </div>
+          </li>
+
+               <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Charts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="2015chart.html">2015</a>
               <a class="dropdown-item" href="humidity.html">Humidity</a>
               <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
               <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
@@ -59,7 +72,7 @@
       <p>The crimes over the four course period of 2015-2018 were substantial, so it required consierable cleaning. We noticed trends of total increased crime over 2015-2018.</p>
       <p>We had to modify the data to correct for the incorrect coordinates we obtained by shifting the longitude by the standard error we calculated.</p>
       <p>From here we narrowed down the zip codes to focus on downtown Austin as the surrouding suburbs were skewing our heatmap.</p>
-      <p>Finally we decided to focus on the key crimes in their respective zip codes. We compared the crimes in those zip codes against the locations of the crimes to amount of gun stores, liquor stores, casinos.</p>
+      <p>Finally we decided to focus on the key crimes in their respective zip codes. We compared the crimes in those zip codes over 3 year period to see if we could find any signigicant developments between zip codes and neigbhords. Furhtermore we compared the locations of these crimes to locations of gun stores, liquor stores, and casinos.</p>
         </p>
       <p>After assembling the dataset, we used a number of data tools to build maps displaying the crime data in a heatmap and used the new Java Library of Google Charts to display the types of crime by zip code.</p>
     </div>
@@ -70,11 +83,11 @@
 
             <div class="col-md-50">
                 <div class="col-md-12">
-                    <h3>Austin City by Zip Codes</h3>
+                    <h3>Downtown Austin by Zip Code</h3>
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="temp.html"><img src="Presentation/AustinZipMap.png" width="100%" alt="temprature"></a>
+                            <a href="temp.html"><img src="../Presentation/AustinZipMap.png" width="100%" alt="Downtown Austin by Zip Code"></a>
                         </div>
                        
                       
