@@ -38,6 +38,42 @@ var bars = [
     {
         name: "Garage",
         location: [30.268007, -97.7440126]
+    },
+    {
+        name: "Dive Bar & Lounge",
+        location: [30.2798513, -97.7420803]
+    },
+    {
+        name: "The Skylark Lounge",
+        location: [30.2846, -97.7045]
+    },
+    {
+        name: "Bling Pig Pub",
+        location: [30.2671, -97.7398]
+    },
+    {
+        name: "Half Step",
+        location: [30.2585538, -97.385365]
+    },
+    {
+        name: "Drinkwell",
+        location: [30.3172332, -97.7206052]
+    },
+    {
+        name: "Upstairs at Caroline",
+        location: [30.2688104, -97.7423102]
+    },
+    {
+        name: "Nickel City",
+        location: [30.268651, -97.728072]
+    },
+    {
+        name: "Key Bar",
+        location: [30.269722, -97.74939]
+    },
+    {
+        name: "Container Bar",
+        location: [30.260356, -97.738494]
     }
 ];
 
@@ -69,6 +105,26 @@ var liquorStores = [
     {
         name: "Urban Wine Liquor",
         location: [30.264868, -97.744228]
+    },
+    {
+        name: "South Lamar Wine & Spirits",
+        location: [30.2469838, -97.777764]
+    },
+    {
+        name: "Austin's Liquor",
+        location: [30.3566706, -97.6868989]
+    },
+    {
+        name: "Wiggy's Wine & Spirits",
+        location: [30.2764, -97.7519]
+    },
+    {
+        name: "J&J Spirits",
+        location: [30.2686, -97.7281]
+    },
+    {
+        name: "The Austin Wine Merchant",
+        location: [30.2697, -97.7479]
     }
 ];
 
