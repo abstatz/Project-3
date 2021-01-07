@@ -136,8 +136,57 @@ for (var i = 0; i < liquorStores.length; i++) {
     );
 }
 
+var zipCodes = [
+    {
+        name: "78703",
+        location: [30.2915, -97.7688]
+    },
+    {
+        name: "78751",
+        location: [30.3056, -97.7254]
+    },
+    {
+        name: "78705",
+        location: [30.2962, -97.7390]
+    },
+    {
+        name: "78712",
+        location: [30.2835, -97.7349]
+    },
+    {
+        name: "78701", 
+        location: [30.2729, -97.7444]
+    },
+    {
+        name: "78704",
+        location: [30.2457, -97.7688]
+    },
+    {
+        name: "78723",
+        location: [30.3081, -97.6819]
+    },
+    {
+        name: "78721",
+        location: [30.2737, -97.6819]
+    },
+    {
+        name: "78742",
+        location: [30.2406, -97.6602]
+    }
+];
+
+var zipMarkers = [];
+
+for (var i = 0; i < zipCodes.length; i++) {
+   zipMarkers.push(
+       L.marker(zipCodes[i].location).bindPopup("<h1>" + zipCodes[i].name + "</h1>")
+   ); 
+}
+
+
 var barLayer = L.layerGroup(barMarkers);
 var liquorstoreLayer = L.layerGroup(liquorstoreMarkers);
+var zipLayer = L.layerGroup(zipMarkers);
 
 var light = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/1/1/0?access_token=pk.eyJ1IjoiYWtzcGVsaW90cyIsImEiOiJja2lpOG9waDAwMGF5MnBxcnl6am5oaHJ0In0.YEEhHfhuXniuu0udC8Movw", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
@@ -160,13 +209,14 @@ var baseMaps = {
 
 var overlayMaps = {
     Bars: barLayer,
-    Liquor_Stores: liquorstoreLayer
+    Liquor_Stores: liquorstoreLayer,
+    Zip: zipLayer
 };
 
 var myMap = L.map("map", {
     center: [30.2672, -97.7431],
     zoom: 6,
-    layers: [dark, barLayer, liquorstoreLayer]
+    layers: [dark, barLayer, liquorstoreLayer, zipLayer]
 });
 
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
